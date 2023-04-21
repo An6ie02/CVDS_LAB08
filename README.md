@@ -18,12 +18,16 @@ Sobre el proyecto web realizado en el laboratorio 5, se trabajará para integrar
 2. Lograr desplegar la página del tutorial del laboratorio 5
 
     Desplegando la página del laboratorio 5, añadiendo dependencias al `pom.xml`\
-    
     ![DevGuesBeans](./imgs/pagina%20lab5.png)
 
 3. Crear un página de bienvenida en donde:
     - Se le pida el nombre del jugador. (Esta información se debe almacenaren un Bean detipo Aplicación llamado ‘UserBean’)
+
+        Se agrega `UserBean.java` en `edu.eci.cvds.backingbean`
+
     - Se le dé la bienvenida al juego y tenga un botón “Iniciar”, el cual una vez se presione direccione a la página anteriormente creada en donde el jugador podrá jugar.
+
+        ![WelcomePage](./imgs/paginabienvenida.png)
 
 ## PARTE II. INTEGRACIÓN DE SPRING DATA CON EL PROYECTO WEB
 
