@@ -1,7 +1,5 @@
 # CVDS - LAB08 INTEGRACIÓNCONCEPTOS (JSF, Spring Data, Arquitectura por capas)
 
----
-
 **Integrantes:**
 Angie Natalia Mojica - Daniel Antonio Santanilla
 ---
@@ -38,4 +36,22 @@ Sobre el proyecto web realizado en el laboratorio 5, se trabajará para integrar
     - Agregar un registro:
         - En la columna PROPIEDAD colocar el valor: “Premio”
         - En la columna VALOR colocar el valor: “100”.
+
+    Se añade `GameConfiguration.java`, `GameRepository.java` y `GameService.java` a `edu.eci.cvds.backingbean` y el registro valor del registro en `GuessBean.java`
+
 2. Crear la funcionalidad que obtenga ese valor de base de datos una vez se ingrese al juego (presión del botón iniciar).
+
+    Se inicia una contenedor con MYSQL y luego se ejecuta la aplicación
+
+    ```bash
+    docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+    ```
+
+    Se obserba la página principal\
+    ![StartGamePage](./imgs/newconfig.png)
+
+    Se inicial el juego y se toma la propiedad de la base de datos\
+    ![ConfigGame](./imgs/dbconfig.png)
+
+    Se observa en el juego el premio\
+    ![NewFeature](./imgs/startgame.png)
