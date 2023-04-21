@@ -14,7 +14,7 @@
         <h:form id="name-form">
             <h2>Princial Page of Guess Game</h2>
             <p:inputText value="#{userBean.userName}" placeholder="Enter a your name..." required="true"/>
-            <p:commandButton value="Start Game" action="guess.xhtml" />
+            <p:commandButton value="Start Game" onclick="window.location.href='guess.xhtml'" actionListener="#{guessBean.setReward()}" />
         </h:form>
     </section>
 </h:body>

@@ -11,6 +11,7 @@
         <div class="game">
           <h2>Guess Bean</h2>
           <p:outputLabel value="#{userBean.welcomeMessage()}" styleClass="welcome-message" />
+          <p:outputLabel value="#{guessBean.getReward()}" />
           <p:outputLabel value="#{guessBean.getNumber()}" style="display: none;" />
           <div class="input-container">
             <p:inputText class="input-text" binding="#{input}" placeholder="Enter a number..." />

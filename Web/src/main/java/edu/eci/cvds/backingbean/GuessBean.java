@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,6 +13,9 @@ import org.springframework.stereotype.Component;
 @SessionScoped
 
 public class GuessBean {
+    
+    @Autowired
+    GameService gameService;
     
     private int number = (int) (Math.random()*10)+1;
     private int attempts = 0;
@@ -70,6 +74,14 @@ public class GuessBean {
 
     public void setLastAttempts(ArrayList<Integer> lastAttempts) {
         this.lastAttempts = lastAttempts;
+    }
+
+    public String getReward() {
+        return gameService.getGameConfiguration("Premio").toString();
+    }
+
+    public void setReward() {
+        gameService.addProperty(new GameConfiguration("Premio", "100"));
     }
 
 }
