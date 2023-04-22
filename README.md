@@ -47,7 +47,7 @@ Sobre el proyecto web realizado en el laboratorio 5, se trabajará para integrar
     docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
     ```
 
-    Se obserba la página principal\
+    Se observa la página principal\
     ![StartGamePage](./imgs/newconfig.png)
 
     Se inicial el juego y se toma la propiedad de la base de datos\
